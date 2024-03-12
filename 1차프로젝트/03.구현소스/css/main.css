@@ -101,7 +101,7 @@ body * {
 }
 
 #pg1 {
-    background: url(../images/uNIMfMFIB58I4GqN5xdKdabeE5KzPHycSB0DDo3pJE9h4L1e1Nrqrk4hHSns6Gzp6yrz89JRNMFx8SezBQfDl23XX25wQOjvMmUw5xqSOy9i6ywYBfLKCdbfnJBmBC2U.jpg)
+    background: url(../images/thumbnail1.jpg)
         no-repeat fixed center/cover;
 }
 #pg2 {
@@ -109,10 +109,11 @@ body * {
         no-repeat fixed center/cover;
 }
 
-/* 8. 하단영역 */
+/* 하단영역 */
 #footer-area {
-    position: absolute;
+    
+    position: relative;
     height: 80px;
-    background-color: #fff;
-    bottom:0;
+    background-color: transparent;
+    bottom : 0%;
 }
