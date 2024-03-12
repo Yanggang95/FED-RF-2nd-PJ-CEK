@@ -14,17 +14,24 @@ body * {
     background-color: black;
 }
 /* 1. 상단영역 */
-.top-area {
-    height: 120px;
+#top-area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    height: 100px;
 }
+
 .top-area img {
-    width: min(100px, 25vw);
+    width: min(110px, 28vw);
 }
 .menu {
     display: flex;
 }
 .mlogo {
     position: absolute;
+    top: 2vw;
+    left: 2vw;
 }
 
 .burger {
@@ -33,13 +40,12 @@ body * {
     width: 280px;
     height: 140px;
     margin: 0 auto;
-/*     outline: 5px dotted lightpink; */
     /* 손가락보이기 */
     cursor: pointer;
     transform: scale(0.1);
     transform-origin: right top;
-    top: 1.5vw;
-    right: 3.5vw;
+    top: 2vw;
+    right: 2vw;
 }
 
 /* 햄버거 바 공통 */
@@ -53,10 +59,7 @@ body * {
 .burger span:nth-child(1) {
     top: 0;
     /* 트랜지션 개별설정 : 햄버거 복귀 */
-    transition: top 0.3s 0.3s, transform 0.3s;
-    /* top값은 0.3초 대기후 0.3초 애니,
-transform은 바로 0.3초 애니
-회전 후 중앙이동함 */
+    transition: top 0.4s, transform 0.4s;
 }
 /* 2번 바 */
 .burger span:nth-child(2) {
@@ -65,77 +68,51 @@ transform은 바로 0.3초 애니
     /* left 초기값 있어야
 애니메이션 됨 (기본값 auto) */
     /* 트랜지션 : 0.1초 애니 */
-    transition: 0.1s 0.3s;
+    transition: 0.1s;
 }
 /* 3번 바 */
 .burger span:nth-child(3) {
     top: 140px;
     /* 트랜지션 개별설정 : 햄버거 복귀 */
-    transition: 0.3s 0.3s, transform 0.3s;
-    /* top값은 0.3초 대기후 0.3초 애니,
-transform은 바로 0.3초 애니
-회전 후 중앙이동함 */
+    transition: 0.4s, transform 0.4s;
 }
 
 /* 1번 바 */
 .burger.on span:nth-child(1) {
     top: 70px;
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
     /* 트랜지션 개별설정 */
-    transition: top 0.3s, transform 0.3s 0.3s;
-    /* top값은 바로 0.3초 애니,
-transform은 0.3초 대기후 0.3초 애니
-중앙이동후 회전함 */
+    transition: top 0.4s, transform 0.4s;
 }
 /* 2번 바 */
 .burger.on span:nth-child(2) {
     top: 70px;
     width: 0%;
     left: 50%;
-    /* 트랜지션 0.3초후 0.3초 애니 */
-    transition: 0.1s 0.3s;
+    /* 트랜지션 0.3초후 */
+    transition: 0.1s;
 }
 /* 3번 바 */
 .burger.on span:nth-child(3) {
     top: 70px;
-    transform: rotate(135deg);
+    transform: rotate(45deg);
     /* 트랜지션 개별설정 */
-    transition: top 0.3s, transform 0.3s 0.3s;
-    /* top값은 바로 0.3초 애니,
-transform은 0.3초 대기후 0.3초 애니
-중앙이동후 회전함 */
+    transition: top 0.4s, transform 0.4s;
 }
 
-/* 2. 배너영역 */
-.ban-area {
-    height: 680px;
+#pg1 {
+    background: url(../images/uNIMfMFIB58I4GqN5xdKdabeE5KzPHycSB0DDo3pJE9h4L1e1Nrqrk4hHSns6Gzp6yrz89JRNMFx8SezBQfDl23XX25wQOjvMmUw5xqSOy9i6ywYBfLKCdbfnJBmBC2U.jpg)
+        no-repeat fixed center/cover;
 }
-/* 서브파트메뉴 */
-.spart-menu {
-    height: 68px;
+#pg2 {
+    background: url(../images/ySMh7trcgxLYhp3oss1HL0xY3ovaUDrGne7MuPVIxE4XNB4N5T5ksqNV0PaeIpTr0fqDqmdxHWAV474hKp9aDl2MBm8618R1EPBz5ZhLHnIpHa9xE9kdR5anDk7TBQIM.jpg)
+        no-repeat fixed center/cover;
 }
-/* 3. 인트로영역 */
-.intro-area {
-    height: 575px;
-}
-/* 4. 미리보기영역 */
-.preview-area {
-    height: 803px;
-}
-/* 5. 현장포토영역 */
-.real-photo-area {
-    height: 1043px;
-}
-/* 6. 대표이미지 영역 */
-.main-photo-area {
-    height: 731px;
-}
-/*7. 최신동영상영역 */
 
-.clip-video-area {
-    height: 548px;
-}
 /* 8. 하단영역 */
-.footer-area {
-    height: 371px;
+#footer-area {
+    position: absolute;
+    height: 80px;
+    background-color: #fff;
+    bottom:0;
 }
