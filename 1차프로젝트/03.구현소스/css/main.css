@@ -246,6 +246,7 @@ body * {
     .page-pagination{
         display : none;
     }
+
 }
 @media screen and (max-width:880px){
     #footer-area{
@@ -273,13 +274,14 @@ body * {
     line-height: 2rem;
 }
 
+/* 하단 라인 */
 .line{
     display: block;
     position: absolute;
-    bottom: -94px;
+    bottom : -2px;
     left: calc((100% - 1px) / 2);
     width: 1px;
-    height: 80px;
+    height: 70px;
     background-color: transparent;
     border-left: 2px solid #ffffff33;
     border-radius: 0.5px;
@@ -292,7 +294,7 @@ body * {
     bottom: 0;
     left: -2px;
     width: 1px;
-    height: 80px;
+    height: 70px;
     background-color: transparent;
     border-radius: 0.5px;
     border-left: 2px solid #fff;
