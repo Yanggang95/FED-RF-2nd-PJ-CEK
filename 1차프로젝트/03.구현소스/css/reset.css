@@ -23,11 +23,9 @@ figcaption {
     margin: 0;
     padding: 0;
 }
-
 .page{
     height: 953px;
 }
-
 /* ul,ol 순번,블릿없앰 */
 ul,ol{
     list-style: none;
