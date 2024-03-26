@@ -358,22 +358,41 @@ body * {
 
 
 .fnb{
+    position: absolute;
     display: flex;
     color : #fff;
-    position: absolute;
     right: 30px;
     top: 21px;
     font-weight: bold;
     width: 330px;
-    overflow: hidden;
+    height: 500px;
 }
 
 .fnb-family{
-    position: absolute;
+    position: relative;
+    top: 0%;
+    width: 60%;
+    height: 4%;
+    transition: .3s ease-in-out;
+    overflow: hidden;
+    color : #fff;
 }
 
-.fnb-policy{
-    padding-left : 200px;
+.fnb-family a{
+    color:#fff;
+}
+
+
+.fnb-family ul{
+    display: block;
+
+    flex-direction: column;
     
+    justify-content: center;
+    
+    white-space: nowrap;
+
+    background-color: #00000096;
+
 }
 

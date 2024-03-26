@@ -10,7 +10,6 @@ const addEvt = (ele, evt, fn) => ele.addEventListener(evt, fn);
 addEvt(window, "load", loadFn);
 
 
-
 function loadFn(){
 
     //왼쪽버튼
@@ -20,14 +19,26 @@ function loadFn(){
     //슬라이드
     const slide = qs("#slide");
 
+    for(let i=0;i<14;i++){
+        slide.innerHTML +=`<li>
+        <img src="./images/thumbnail${i+1}.jpg" alt="썸네일${i+1}">
+        </li> `
+    }
+
+
     l_button.onclick = goSlide;
     r_button.onclick = goSlide;
 
+    let prot = false;
 
 
     function goSlide(){
 
-        console.log("왔냐")
+        if(prot) return;
+        prot = true;
+        setTimeout(() => {
+            prot = false;
+        }, 600);
         
         let isRbtn = this.classList.contains('right');
 
@@ -41,18 +52,28 @@ function loadFn(){
                     slide.style.left = '0';
                     slide.style.transition = 'none';
                 },600)
+        }else{
+            let list = slide.querySelectorAll('li');
+            slide.insertBefore(list[list.length - 1], list[0]);
+
+            slide.style.left = '-100%';
+            slide.style.transition = 'none';
+
+            setTimeout(() => {
+                slide.style.left = '0';
+                slide.style.transition = '.6s ease-out';
+            }, 0);
         }
 
     }
 
-
-
-    
     //family 버튼
-    const f_button = qs(".fnb-family");
+    const fnb_family = qs(".fnb-family");
+    const p = qs(".fnb-family p")
 
-    f_button.onclick = (e) =>{
-    console.log('Family 버튼클릭');
+    p.onclick = (e) =>{
+        fnb_family.style.top = "-38%";
+        fnb_family.style.height = "42%";
     }
 
 }

@@ -1,182 +1,149 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon-32x32.png"/>
-    <link rel="stylesheet" href="./css/main.css">
-    <title>HYBE</title>
-    <script src="./js/main.js" defer></script>
-</head>
-<body>
-    <!-- 1. 상단영역 -->
-    <div id="top-area">
-        <header class="top-area inbox">
-            <nav class="menu">
-                <div class="mlogo">
-                    <a href="./main.html">
-                        <img src="./images/하이브-white-logo-small.png">
-                    </a>
-                </div>
-                <div class="burger" onclick="this.classList.toggle('on')">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </nav>
-        </header>
-    </div>
-    <!-- 2. 첫번째 페이지 -->
-    <div class="page" id="pg1">
-        <!-- 2-0. 배경 -->
-        <div class="wrap">
-            <ul id="slide">
-                <li>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="./images/favicon-32x32.png" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <title>HYBE</title>
+        <script src="./js/main.js" defer></script>
+    </head>
+    <body>
+        <!-- 1. 상단영역 -->
+        <div id="top-area">
+            <header class="top-area inbox">
+                <nav class="menu">
+                    <div class="mlogo">
+                        <a href="./main.html">
+                            <img src="./images/하이브-white-logo-small.png" />
+                        </a>
+                    </div>
+                    <div class="burger" onclick="this.classList.toggle('on')">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <!-- 2. 첫번째 페이지 -->
+        <div class="page" id="pg1">
+            <!-- 2-0. 배경 -->
+            <div class="wrap">
+                <ul id="slide">
+                    <!-- <li>
                     <img src="./images/thumbnail1.jpg" alt="썸네일1">
-                </li>
-                <li>
-                    <img src="./images/thumbnail2.jpg" alt="썸네일2">
-                </li>
-                <li>
-                    <img src="./images/thumbnail3.jpg" alt="썸네일3">
-                </li>
-                <li>
-                    <img src="./images/thumbnail4.jpg" alt="썸네일4">
-                </li>
-                <li>
-                    <img src="./images/thumbnail5.jpg" alt="썸네일5">
-                </li>
-                <li>
-                    <img src="./images/thumbnail6.png" alt="썸네일6">
-                </li>
-                <li>
-                    <img src="./images/thumbnail7.jpg" alt="썸네일7">
-                </li>
-                <li>
-                    <img src="./images/thumbnail8.jpg" alt="썸네일8">
-                </li>
-                <li>
-                    <img src="./images/thumbnail9.jpg" alt="썸네일9">
-                </li>
-                <li>
-                    <img src="./images/thumbnail10.jpg" alt="썸네일10">
-                </li>
-                <li>
-                    <img src="./images/thumbnail11.jpg" alt="썸네일11">
-                </li>
-                <li>
-                    <img src="./images/thumbnail12.jpg" alt="썸네일12">
-                </li>
-                <li>
-                    <img src="./images/thumbnail13.jpg" alt="썸네일13">
-                </li>
-                <li>
-                    <img src="./images/thumbnail14.jpg" alt="썸네일14">
-                </li>
-                
-            </ul>
-        </div>
-        <!-- 2-1. 동영상 재생버튼 -->
-        <div class="main-display">
-            <ul class="slider">
-                <li class="thumb-01"></li>
-                <li class="thumb-02"></li>
-                <li class="thumb-03"></li>
-                <li class="thumb-04"></li>
-                <li class="thumb-05"></li>
-                <li class="thumb-06"></li>
-                <li class="thumb-07"></li>
-                <li class="thumb-08"></li>
-                <li class="thumb-09"></li>
-                <li class="thumb-10"></li>
-                <li class="thumb-11"></li>
-                <li class="thumb-12"></li>
-                <li class="thumb-13"></li>
-                <li class="thumb-14"></li>
-                <li class="thumb-15"></li>
-            </ul>
-        </div>
-        <a href="#" class="play_btn"></a>
-        <!-- 2-2. 페이지 표시 -->
-        <!-- 왼쪽 화살표 -->
-        <div class="page-pagination">
-            <img class="left" src="./images/arrow_w_l.png" alt="왼쪽화살표">
-            <!-- 현재페이지위치 -->
-            <span class="page-pagination-current">01</span>
-            <!-- 총페이지개수 -->
-            <span class="page-pagination-total">015</span>
-        </div>
-        <!-- 2-3. 페이지 이동 -->
-        <!-- 오른쪽 화살표 -->
-        <div class="page-navigation">
-            <img class="right" src="./images/arrow_w_r.png" alt="오른쪽화살표">
-        </div>
-        <!-- 2-4. 로딩바 -->
-        <div class="loading-bar">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-        <!-- 2- 하단영역 -->
-        <div id="footer-area">
-            <footer class="footer-area inbox">
-                <p class="copy">ⓒ HYBE. All Rights Reserved</p>
-                <div class="fnb">
-                    <div class="fnb-family">
-                        <p>FAMILY</p>
-                        <ul>
-                            <li>
-                                <a href="#">BIGHIT MUSIC</a>
-                            </li>
-                            <li>
-                                <a href="#">BELIFT LAB</a>
-                            </li>
-                            <li>
-                                <a href="#">SOURCE MUSIC</a>
-                            </li>
-                            <li>
-                                <a href="#">PLEDIS ENTERTAINMENT</a>
-                            </li>
-                            <li>
-                                <a href="#">KOZ ENTERTAINMENT</a>
-                            </li>
-                            <li>
-                                <a href="#">HYBE LABELS JAPAN</a>
-                            </li>
-                            <li>
-                                <a href="#">ADOR</a>
-                            </li>
-                            <li>
-                                <a href="#">SUPERTONE</a>
-                            </li>
-                            <li>
-                                <a href="#">WEVERSE COMPANY</a>
-                            </li>
-                    </div>
-                    <div class="fnb-policy">
-                        <a href="#">개인정보처리방침</a>
-                    </div>
-                </div>
+                </li> -->
                 </ul>
-            </footer>
+            </div>
+            <!-- 2-1. 동영상 재생버튼 -->
+            <div class="main-display">
+                <ul class="slider">
+                    <li class="thumb-01"></li>
+                    <li class="thumb-02"></li>
+                    <li class="thumb-03"></li>
+                    <li class="thumb-04"></li>
+                    <li class="thumb-05"></li>
+                    <li class="thumb-06"></li>
+                    <li class="thumb-07"></li>
+                    <li class="thumb-08"></li>
+                    <li class="thumb-09"></li>
+                    <li class="thumb-10"></li>
+                    <li class="thumb-11"></li>
+                    <li class="thumb-12"></li>
+                    <li class="thumb-13"></li>
+                    <li class="thumb-14"></li>
+                    <li class="thumb-15"></li>
+                </ul>
+            </div>
+            <a href="#" class="play_btn"></a>
+            <!-- 2-2. 페이지 표시 -->
+            <!-- 왼쪽 화살표 -->
+            <div class="page-pagination">
+                <img
+                    class="left"
+                    src="./images/arrow_w_l.png"
+                    alt="왼쪽화살표"
+                />
+                <!-- 현재페이지위치 -->
+                <span class="page-pagination-current">01</span>
+                <!-- 총페이지개수 -->
+                <span class="page-pagination-total">015</span>
+            </div>
+            <!-- 2-3. 페이지 이동 -->
+            <!-- 오른쪽 화살표 -->
+            <div class="page-navigation">
+                <img
+                    class="right"
+                    src="./images/arrow_w_r.png"
+                    alt="오른쪽화살표"
+                />
+            </div>
+            <!-- 2-4. 로딩바 -->
+            <div class="loading-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- 2- 하단영역 -->
+            <div id="footer-area">
+                <footer class="footer-area inbox">
+                    <p class="copy">ⓒ HYBE. All Rights Reserved</p>
+                    <div class="fnb">
+                        <div class="fnb-family">
+                            <p>FAMILY</p>
+                            <ul>
+                                <li>
+                                    <a href="#">BIGHIT MUSIC</a>
+                                </li>
+                                <li>
+                                    <a href="#">BELIFT LAB</a>
+                                </li>
+                                <li>
+                                    <a href="#">SOURCE MUSIC</a>
+                                </li>
+                                <li>
+                                    <a href="#">PLEDIS ENTERTAINMENT</a>
+                                </li>
+                                <li>
+                                    <a href="#">KOZ ENTERTAINMENT</a>
+                                </li>
+                                <li>
+                                    <a href="#">HYBE LABELS JAPAN</a>
+                                </li>
+                                <li>
+                                    <a href="#">ADOR</a>
+                                </li>
+                                <li>
+                                    <a href="#">SUPERTONE</a>
+                                </li>
+                                <li>
+                                    <a href="#">WEVERSE COMPANY</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="fnb-policy">
+                            <a href="#">개인정보처리방침</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <!-- 하단 라인 -->
+            <span class="line"></span>
         </div>
-        <!-- 하단 라인 -->
-        <span class="line"></span>
-    </div>
-    <!-- 3. 두번째 페이지 -->
-    <div class="page" id="pg2">
-    </div>
-</body>
+        <!-- 3. 두번째 페이지 -->
+        <div class="page" id="pg2"></div>
+    </body>
 </html>
