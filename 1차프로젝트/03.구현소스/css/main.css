@@ -359,7 +359,6 @@ body * {
 
 .fnb{
     position: absolute;
-    display: flex;
     color : #fff;
     right: 30px;
     top: 21px;
@@ -368,22 +367,28 @@ body * {
     height: 500px;
 }
 
-.fnb-family{
-    position: relative;
+.fam{
+    position : absolute;
+}
+
+.list-box{
+    position: absolute;
+    margin-top: 20px;
     top: 0%;
     width: 60%;
-    height: 4%;
+    height: 0%;
     transition: .3s ease-in-out;
     overflow: hidden;
+    font-weight: normal;
     color : #fff;
 }
 
-.fnb-family a{
+.fnb a{
     color:#fff;
 }
 
 
-.fnb-family ul{
+.list-box ul{
     display: block;
 
     flex-direction: column;
@@ -396,3 +401,8 @@ body * {
 
 }
 
+.fnb-policy{
+    padding-left : 61%;
+
+    white-space: nowrap;
+}
